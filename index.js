@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+let valor = 12010;
 
 app.use(
     express.urlencoded({
@@ -9,12 +10,8 @@ app.use(
 app.use(express.json());
 app.listen(3000, () => {
     console.log('Servidor rodando em http://localhost:3000');
-  });
-// app.get('/', (req, res) => {
-//     res.json({ message: 'Api working' });
-// });
+});
 
-let valor = 12010;
 
 // Função para obter a quantidade de dias passados desde uma data específica
 function obterDiasPassados() {
